@@ -114,8 +114,18 @@ def display_temp():
     return f"{latest_dictionary_entry['temp']} C"
 
 ui.p("warmer than usual")
+# ui.p("☀️ Sun is out!")  # adds a sun emoji
 
-icon_svg("sun")
+# icon_svg("sun")
+
+# ui.markdown('<i class="bi bi-sun" style="font-size: 2rem;"></i>')
+
+def icon_svg(icon_name: str) -> str:
+    return f"""
+    <svg width="32" height="32" fill="currentColor" class="bi bi-{icon_name}" viewBox="0 0 16 16">
+        <use xlink:href="https://cdn.jsdelivr.net/npm/bootstrap-icons/bootstrap-icons.svg#{icon_name}"/>
+    </svg>
+    """
 
 ui.hr()
 
