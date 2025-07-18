@@ -8,10 +8,14 @@ Commit & push the updated /docs
 git add docs/
 git commit -m "Update deployed Shiny app"
 git push
-
-
 This keeps your live app in sync with your local updates.
 to make sure GitHub Pages always reflects the latest version of your app:
+
+Changes I’ve made to the code:
+Colored temperature and time boxes
+Emoji icons for visual appeal
+Gradient backgrounds for headers and boxes
+Trend chart with scatter points and red trend line
 
 
 Your app.py or dashboard/app.py file should have the following sections:
