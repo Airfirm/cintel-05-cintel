@@ -77,6 +77,7 @@ Estimating the time a feature will take is a difficult and valuable skill.
 
 
 
+
 CC5.1: Orient and Engage (Live Data & Continuous Intelligence)
 We learned how to add user interaction and reactive content to static data sources using PyShiny.  We learned a bit of Python by working in the browser, and we briefly explored the process of moving development to our machine for offline work and/or working with confidential data sources and projects. 
 
