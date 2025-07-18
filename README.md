@@ -17,6 +17,22 @@ Emoji icons for visual appeal
 Gradient backgrounds for headers and boxes
 Trend chart with scatter points and red trend line
 
+---
+
+**✅ What enhancement do you propose?**
+I added a unit toggle to allow users to switch between displaying temperatures in **Celsius (°C)** and **Fahrenheit (°F)** across the entire dashboard — including the value box, data table, and trend chart.
+
+---
+
+**🛠️ How can it be implemented?**
+
+1. I decided to add `ui.input_checkbox`, even though use (or `ui.input_switch`) too for a more modern UX, in the sidebar labeled "Display in Fahrenheit".
+2. I use `reactive.input` to check the selected unit inside `@render` and `@reactive.calc()` functions.
+3. I modify all temperature values accordingly:
+
+   * Using the formula `F = (C × 9/5) + 32` when the checkbox is selected.
+   * Adjusting all labels to reflect the correct unit (°C or °F) dynamically.
+---
 
 Your app.py or dashboard/app.py file should have the following sections:
 
