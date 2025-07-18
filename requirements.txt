@@ -7,4 +7,6 @@ seaborn
 shiny
 shinylive
 shinywidgets
+scipy
+plotly.express
 # altair[all]

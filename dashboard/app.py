@@ -6,12 +6,14 @@
 from shiny import reactive, render
 
 # From shiny.express, import just ui and inputs if needed
-from shiny.express import ui
+from shiny.express import ui, input
 
 # Imports from Python Standard Library to simulate live data
 import random
 from datetime import datetime
 from collections import deque
+from shinywidgets import render_plotly
+from scipy import stats
 
 # Import pandas for working with data
 import pandas as pd
@@ -107,12 +109,12 @@ with ui.sidebar(open="open"):
   ui.h6("Links:")
   ui.a(
         "GitHub Source",
-        href="https://github.com/denisecase/cintel-05-cintel-fancy",
+        href="https://github.com/Airfirm/cintel-05-cintel",
         target="_blank",
   )
   ui.a(
         "GitHub App",
-        href="https://denisecase.github.io/cintel-05-cintel-fancy/",
+        href="https://github.com/Airfirm/cintel-05-cintel/blob/main/dashboard/app.py",
         target="_blank",
   )
   ui.a("PyShiny", href="https://shiny.posit.co/py/", target="_blank")
